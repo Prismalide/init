@@ -4,15 +4,15 @@
     
 ### Projet 
 
-jsonHtml décrit un format de contenu JSON que l'on peut décoder en donnée HTML.
-A l'origine, ce format à été élaboré dans le projet [toDomHtml](https://github.com/Prismalide/toDomHtml) avec lequel il est compatible. 
-Son décodage et écriture ce veut très simple.
-Des sources utiles sont disponibles:
+jsonHtml décrit un format de contenu JSON que l'on peut décoder en donnée HTML.   
+A l'origine, ce format à été élaboré dans le projet [toDomHtml](https://github.com/Prismalide/toDomHtml) avec lequel il est compatible.   
+Son décodage et écriture ce veut très simple.   
+Des sources utiles sont disponibles:   
 [jsonHtml.js](js/src/) est l’implémentation en javascript.    
 
 ### version/licence
-Format en version `Alpha` actuellement sous licence BSD 3
-Source implèmentation  en version `Alpha` actuellement sous licence BSD 3
+Format en version `Alpha` actuellement sous licence BSD 3.   
+Source implèmentation  en version `Alpha` actuellement sous licence BSD 3.   
 ## Format minimaliste
 Un jsonHtml est un tableau:   
 **[ { tagName:...attributs... } , inner-1, ... , inner-n ]**     
@@ -28,4 +28,4 @@ et tous les mélanges possibles:
 **{tagname:{maclass1:{maclass2-etc:'autres attributs', unattribut:'values',..., n_attribut:'values'}}}**   
 
 ## demo  
-[first test.html](src/use/samples/)  
+[first test.html](src/use/samples)    
