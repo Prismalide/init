@@ -22,5 +22,5 @@ Plusieurs manières d'écrire:
 et tous les mélanges possibles:  
 **{tagname:{maclass1:{maclass2-etc:'autres attributs', unattribut:'values',..., n_attribut:'values'}}}**   
 
-## demo
- [first test.html](src/use/samples/first test.html)  
+## demo  
+[first test.html](src/use/samples/)  
