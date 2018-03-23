@@ -37,53 +37,53 @@ et tous les mélanges possibles:
 Les exemples suivant montre que globalement l'écriture est aussi lourde en html que en jsonHtml
 en jsonHtml:
 ```javascript
+[{div:''},
 	[{div:''},
-		[{div:''},
-		    "inner dans div",,
-		    [{b:''},[{span:'style="..."' },[{i:''},[{u:''},[{em:''},"aprés br texte "]]], " suite après b.span.u.e "
-		]]],
-		"suite aprés div",
-		[{hr:''}],
-		,
-		[{span:''},
-		    "test span",
-		    [{div:'style="..."' },
-		        "div dans span",
-		]],[{div:''},
-		    "suite dans div après span"
-	]]
+	    "inner dans div",,
+	    [{b:''},[{span:'style="..."' },[{i:''},[{u:''},[{em:''},"aprés br texte "]]], " suite après b.span.u.e "
+	]]],
+	"suite aprés div",
+	[{hr:''}],
+	,
+	[{span:''},
+	    "test span",
+	    [{div:'style="..."' },
+		"div dans span",
+	]],[{div:''},
+	    "suite dans div après span"
+]]
 ```
 donne en Html formaté:
 ```html
+<div>
 	<div>
-		<div>
-			inner dans div<br />
-			<b><span style="..."><i><u><em>aprés br texte </em></u></i> suite après b.span.u.e 
-		</span></b></div>
-		suite aprés div
-		<hr />
-		<br />
-		<span>
-			test span
-			<div style="...">
-				div dans span
-		</div></span><div>
-			suite dans div après span
-	</div></div>
+		inner dans div<br />
+		<b><span style="..."><i><u><em>aprés br texte </em></u></i> suite après b.span.u.e 
+	</span></b></div>
+	suite aprés div
+	<hr />
+	<br />
+	<span>
+		test span
+		<div style="...">
+			div dans span
+	</div></span><div>
+		suite dans div après span
+</div></div>
 ```
 avec class et id : 
 ```javascript
-	[{div:""},
-		[{div:{class1:{class2:""}}}],
-		[{div:"",id:"monId"}],
-		[{div:{class2:{class1:""}},id:"monId2"}]
-	]
+[{div:""},
+	[{div:{class1:{class2:""}}}],
+	[{div:"",id:"monId"}],
+	[{div:{class2:{class1:""}},id:"monId2"}]
+]
 ```
 donne en Html formaté:
 ```html
-	<div>
-		<div class="class1 class2 " ></div>
-		<div id="monId" ></div>
-		<div id="monId2" class="class2 class1 " ></div>
-	</div>
+<div>
+	<div class="class1 class2 " ></div>
+	<div id="monId" ></div>
+	<div id="monId2" class="class2 class1 " ></div>
+</div>
 ```	
